@@ -22,6 +22,7 @@ body {
 .container {
   width: 1200px;
   padding: 0 15px;
+  margin: 0 auto;
   border: 1px solid red;
 }
 .page-header {
@@ -29,11 +30,25 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 114%;
-  position: relative;
+  display: flex;
+  align-items: center;
+}
+.page-header .container {
+  display: flex;
+  align-items: center;
+}
+.page-header .header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.page-header .contact-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 ul {
   list-style: none;
-  display: flex; /*змінить*/
 }
 .header-nav,
 .nav-list,
@@ -54,6 +69,8 @@ ul {
 }
 .contact-list {
   margin-left: 331px;
+  display: flex;
+  justify-content: space-between;
 }
 .logo-web {
   color: var(--color-link);
@@ -123,7 +140,7 @@ ul {
 }
 .hero {
   background: var(--background-hero);
-  padding-left: 285px;
+  text-align: center;
 }
 
 .hero-blok {
@@ -152,10 +169,8 @@ ul {
   line-height: 136%;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  margin-left: 452px;
-  margin-right: 452px;
-  margin-top: 0px;
-  margin-bottom: 30px;
+  text-align: center;
+  padding-top: 200px;
 }
 .botton-studio {
   color: var(--title);
@@ -165,10 +180,11 @@ ul {
   line-height: 187%;
   letter-spacing: 0.06em;
   background: var(--color-link);
-  margin-left: 700px;
-  margin-right: 700px;
-  margin-top: 0px;
   margin-bottom: 200px;
+  width: 200px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 .visually-hidden {
   position: absolute;
@@ -187,11 +203,15 @@ ul {
   text-decoration: none;
   letter-spacing: 0.02em;
   display: flex;
+  justify-content: space-between;
 }
 .page-link:hover,
 .page-link:focus,
 .page-link:active {
   color: var(--color-link);
+}
+.text-section .container {
+  display: flex;
 }
 .text-one {
   color: var(--text-one--title-two--title-three--title-name--title-small);
@@ -200,8 +220,6 @@ ul {
   line-height: 114%;
   text-transform: uppercase;
   letter-spacing: 0.03em;
-  margin-top: 0px;
-  margin-bottom: 10px;
 }
 .text {
   color: var(--text--small-text);
@@ -209,8 +227,6 @@ ul {
   font-size: 14px;
   line-height: 171%;
   letter-spacing: 0.03em;
-  padding: 94px;
-  align-content: stretch;
 }
 .title-two {
   color: var(--text-one--title-two--title-three--title-name--title-small);
