@@ -32,6 +32,7 @@ body {
   line-height: 114%;
   display: flex;
   align-items: center;
+  border: 1px;
 }
 .page-header .container {
   display: flex;
@@ -56,20 +57,22 @@ ul {
   display: flex;
 }
 .nav-list li {
-  padding-left: 94px;
+  padding: 0 24px;
+  justify-content: space-between;
 }
-.header-nav {
+.header-nav ul {
   justify-content: space-between;
   align-items: center;
-  padding-top: 24px;
+  padding: 0 24px;
 }
 .contact-list li:last-child {
   position: absolute;
-  padding: 94px;
+  padding: 0 94px;
 }
-.contact-list {
+.contact-list ul {
   display: flex;
   justify-content: space-between;
+  padding: 0 24px;
 }
 .logo-web {
   color: var(--color-link);
@@ -96,7 +99,6 @@ ul {
   line-height: 119%;
   letter-spacing: 0.03em;
   margin: 0px;
-
   margin-bottom: 20px;
   width: 145px;
 }
@@ -143,6 +145,7 @@ ul {
   background: var(--background-hero);
   text-align: center;
   width: 1200px;
+  padding: 94px;
   margin: 0 auto;
 }
 
@@ -176,6 +179,7 @@ ul {
   letter-spacing: 0.06em;
   text-align: center;
   padding-top: 200px;
+  width: 696px;
 }
 .botton-studio {
   color: var(--title);
@@ -195,9 +199,9 @@ ul {
   position: absolute;
   width: 1px;
   height: 1px;
+  padding: 0;
   margin: -1px;
   border: 0;
-  padding: 0;
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -246,10 +250,10 @@ ul {
   font-size: 36px;
   line-height: 116%;
   letter-spacing: 0.03em;
+  padding: 94px;
   margin-top: 0px;
   margin-bottom: 50px;
   text-align: center;
-  padding: 94px;
 }
 .img {
   display: flex;
@@ -257,13 +261,15 @@ ul {
 img {
   display: block;
 }
-.img li {
+.img ul {
+  justify-content: space-between;
+  width: 370px;
   margin: 0 30px;
 }
 
 .team {
   background: var(--button);
-  padding: 94px;
+  padding: 0 94px;
 }
 
 .title-three {
@@ -278,8 +284,13 @@ img {
 }
 .our-team {
   display: flex;
+  padding: 0 94px;
   margin-bottom: 50px;
   margin: 0px;
+}
+.our-team li {
+  justify-content: space-between;
+  width: 270px;
 }
 .title-name {
   color: var(--text-one--title-two--title-three--title-name--title-small);
@@ -361,9 +372,9 @@ img {
   font-size: 14px;
   line-height: 171%;
   letter-spacing: 0.03em;
+  padding: 9px;
   margin-top: 20px;
   width: 231px;
-  padding: 9px;
   white-space: nowrap;
   text-align: left;
 }
