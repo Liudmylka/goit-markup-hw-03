@@ -61,15 +61,12 @@ ul {
   padding-right: 331px;
   padding-bottom: 32px;
   padding-left: 0px;
-  margin: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .header-nav {
   justify-content: flex-start;
-  padding-top: 24px;
-  padding-right: 0;
-  padding-bottom: 25px;
-  padding-left: 0px;
   margin-right: 93px;
   margin: 0px;
 }
@@ -82,7 +79,8 @@ ul {
   padding-right: 50px;
   padding-bottom: 32px;
   padding-left: 0px;
-  margin: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .logo-web {
   color: var(--color-link);
@@ -120,6 +118,7 @@ ul {
   padding-right: 0px;
   padding-bottom: 32px;
   padding-left: 0px;
+  margin-right: 50px;
   color: var(--main-color);
   text-decoration: none;
   font-weight: 500;
@@ -128,6 +127,7 @@ ul {
   letter-spacing: 0.02em;
   display: flex;
 }
+
 .site-nav:hover,
 .site-nav:focus,
 .site-nav:active {
@@ -149,6 +149,7 @@ ul {
   line-height: 114%;
   letter-spacing: 0.02em;
 }
+
 .open-link:hover,
 .open-link:focus,
 .open-link:active {
@@ -167,6 +168,7 @@ ul {
   text-decoration: none;
   letter-spacing: 0.02em;
 }
+
 .open:hover,
 .open:focus,
 .open:active {
@@ -267,11 +269,30 @@ button {
   text-decoration: none;
   letter-spacing: 0.02em;
 }
+
+.page-contact {
+  display: inline-block;
+  align-items: stretch;
+  justify-content: space-around;
+  padding-top: 32px;
+  padding-right: 0px;
+  padding-bottom: 32px;
+  padding-left: 0px;
+  color: var(--text--small-text);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
 .page-link:hover,
 .page-link:focus,
 .page-link:active {
   color: var(--color-link);
 }
+.page-contact:hover,
+.page-contact:focus,
+.page-contact:active {
+  color: var(--color-link);
+}
+
 .text-section {
   display: flex;
 }
