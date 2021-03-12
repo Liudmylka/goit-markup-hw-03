@@ -22,6 +22,8 @@ body {
 .container {
   width: 1200px;
   margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
   /*border: 1px solid red;*/
 }
 .page-header {
@@ -32,7 +34,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 .page-header .container {
   display: flex;
@@ -63,6 +65,8 @@ ul {
 }
 .nav-list {
   margin: 0 auto;
+  padding-left: 0px;
+  margin-left: 93px;
 }
 .header-nav {
   justify-content: flex-start;
@@ -83,6 +87,7 @@ ul {
 }
 .contact-list {
   margin: 0;
+  padding-left: 0px;
 }
 .logo-web {
   color: var(--color-link);
@@ -143,7 +148,7 @@ ul {
   padding-right: 0px;
   padding-bottom: 32px;
   padding-left: 0px;
-  margin-right: 50px;
+  margin-right: 0;
   color: var(--main-color);
   text-decoration: none;
   font-weight: 500;
@@ -165,10 +170,18 @@ ul {
   padding-right: 0px;
   padding-bottom: 32px;
   padding-left: 0px;
-  margin-right: 50px;
+  margin-right: 0;
   color: var(--color-link);
   text-decoration: none;
   letter-spacing: 0.02em;
+}
+
+.open-li {
+  margin-right: 50px;
+}
+
+.open-link-li {
+  margin-right: 50px;
 }
 
 .open:hover,
@@ -197,10 +210,9 @@ button {
 .button-list {
   display: flex;
   justify-content: center;
-  padding-right: 8px;
-  padding-bottom: 50px;
   padding-left: 8px;
-  margin: 0;
+  margin-bottom: 50px;
+  margin-top: 0px;
 }
 .button {
   color: var(--main-color);
@@ -220,15 +232,7 @@ button {
 .but-one {
   margin-right: 8px;
 }
-.but-two {
-  margin-right: 8px;
-}
-.but-three {
-  margin-right: 8px;
-}
-.but-four {
-  margin-right: 8px;
-}
+
 .hero-title {
   display: inline-block;
   color: var(--title);
@@ -240,6 +244,7 @@ button {
   text-align: center;
   width: 696px;
   margin-bottom: 30px;
+  margin-top: 0;
 }
 .botton-studio {
   align-items: center;
@@ -276,20 +281,19 @@ button {
   padding-right: 0px;
   padding-bottom: 32px;
   padding-left: 0px;
-  margin-right: 50px;
   color: var(--text--small-text);
   text-decoration: none;
   letter-spacing: 0.02em;
 }
-
+.page-link-li {
+  margin-right: 50px;
+}
 .page-contact {
   display: inline-block;
   align-items: stretch;
   justify-content: space-around;
   padding-top: 32px;
-  padding-right: 0px;
   padding-bottom: 32px;
-  padding-left: 0px;
   color: var(--text--small-text);
   text-decoration: none;
   letter-spacing: 0.02em;
@@ -316,16 +320,16 @@ button {
 .only-text {
   display: flex;
   align-items: stretch;
-  width: 270px;
+  padding-left: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .one {
   margin-right: 30px;
+  width: 270px;
 }
 .two {
-  margin-right: 30px;
-}
-.three {
-  margin-right: 30px;
+  width: 270px;
 }
 .text-one {
   color: var(--text-one--title-two--title-three--title-name--title-small);
@@ -348,8 +352,10 @@ button {
   line-height: 171%;
   letter-spacing: 0.03em;
   text-align: left;
-  width: 270px;
   margin: 0;
+}
+.only-img {
+  padding-bottom: 94px;
 }
 .title-two {
   display: block;
@@ -366,9 +372,11 @@ button {
 .img {
   display: flex;
   justify-content: center;
-  border: 1px;
   padding: 0px;
   margin: 0 auto;
+}
+img {
+  display: block;
 }
 .img-one {
   display: block;
@@ -389,7 +397,7 @@ button {
 .team {
   background: var(--button);
   padding-top: 94px;
-  padding-bottom: 50px;
+  padding-bottom: 94px;
   margin: 0 auto;
 }
 
@@ -408,7 +416,7 @@ button {
   justify-content: center;
   margin: 0 auto;
   margin-top: 50px;
-  border: 1px;
+  padding-left: 0px;
 }
 .text-only {
   padding-top: 30px;
@@ -422,19 +430,8 @@ button {
   margin-right: 30px;
   width: 270px;
 }
-.team-two {
-  display: block;
-  margin-left: 0px;
-  margin-right: 30px;
-  width: 270px;
-}
-.team-three {
-  display: block;
-  margin-left: 0px;
-  margin-right: 30px;
-  width: 270px;
-}
-.team-four {
+
+.team-last {
   display: block;
   margin-left: 0px;
   margin-right: 0px;
@@ -498,23 +495,20 @@ button {
 }
 .images {
   display: flex;
-  align-items: baseline;
   flex-wrap: wrap;
   padding: 0px;
   margin: 0;
 }
-.images1,
-.images2,
-.images4,
-.images5,
-.images7,
-.images8 {
+.images-card {
   margin-right: 30px;
+  margin-bottom: 30px;
 }
-.images3,
-.images6,
-.images9 {
+li:nth-child(n + 7) {
+  margin-bottom: 0px;
+}
+.images-last {
   margin-right: 0px;
+  margin-bottom: 30px;
 }
 .photo li {
   border: 1px solid;
@@ -543,8 +537,7 @@ button {
   text-align: left;
 }
 .link {
-  width: 231px;
-  padding-bottom: 60px;
+  padding: 0px;
   display: inline;
   justify-content: flex-start;
 }
@@ -568,6 +561,5 @@ button {
   line-height: 171%;
   letter-spacing: 0.03em;
   margin-top: 20px;
-  width: 231px;
   text-align: left;
 }
